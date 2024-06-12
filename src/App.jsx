@@ -28,7 +28,7 @@ export default function App () {
   useEffect(() => {
     const cliente = new Client({
    //   brokerURL: 'ws://localhost:8080/websocket'
-   brokerURL: 'ws://taxi-front-six.vercel.app/websocket'
+   brokerURL: 'wss://taxi-front-six.vercel.app/websocket'
     })
     cliente.onConnect = () => {
       console.log('Conectado')
